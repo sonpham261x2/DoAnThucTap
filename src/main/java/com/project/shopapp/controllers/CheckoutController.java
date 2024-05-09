@@ -1,45 +1,47 @@
-//package com.project.shopapp.controllers;
-//
-//
-//import com.fasterxml.jackson.databind.JsonNode;
-//import com.fasterxml.jackson.databind.ObjectMapper;
-//import com.lib.payos.PayOS;
-//import com.lib.payos.type.ItemData;
-//import com.lib.payos.type.PaymentData;
-//import java.util.ArrayList;
-//import java.util.List;
-//import org.springframework.http.MediaType;
-//import org.springframework.stereotype.Controller;
-//import org.springframework.web.bind.annotation.*;
-//import jakarta.servlet.http.HttpServletResponse;
-//import java.util.Date;
-//public class CheckoutController {
-//
+package com.project.shopapp.controllers;
+
+
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.lib.payos.PayOS;
+import com.lib.payos.type.ItemData;
+import com.lib.payos.type.PaymentData;
+import java.util.ArrayList;
+import java.util.List;
+import org.springframework.http.MediaType;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
+import jakarta.servlet.http.HttpServletResponse;
+import java.util.Date;
+@Controller
+public class CheckoutController {
+
 //    private final PayOS payOS;
 //    public CheckoutController(PayOS payOS) {
 //        super();
 //        this.payOS = payOS;
 //    }
-//    @RequestMapping(value = "/")
-//    public String Index() {
-//        return "index";
-//    }
-//    @RequestMapping(value = "/success")
-//    public String Success() {
-//        return "success";
-//    }
-//    @RequestMapping(value = "/cancel")
-//    public String Cancel() {
-//        return "cancel";
-//    }
+    @RequestMapping(value = "/index")
+    public String Index() {
+        return "index";
+    }
+    @RequestMapping(value = "/success")
+    public String Success() {
+        return "success";
+    }
+    @RequestMapping(value = "/cancel")
+    public String Cancel() {
+        return "cancel";
+    }
 //    @RequestMapping(method = RequestMethod.POST, value = "/create-payment-link", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+//    @PostMapping("/create-payment-link")
 //    public void checkout(HttpServletResponse httpServletResponse) {
 //        ObjectMapper objectMapper = new ObjectMapper();
 //        try {
 //            final String productName = "Mì tôm hảo hảo ly";
 //            final String description = "Thanh toan don hang";
-//            final String returnUrl = "http://localhost:8080/success";
-//            final String cancelUrl = "http://localhost:8080/cancel";
+//            final String returnUrl = "http://localhost:8088/success";
+//            final String cancelUrl = "http://localhost:8088/cancel";
 //            final int price = 1000;
 //            // Gen order code
 //            String currentTimeString = String.valueOf(new Date().getTime());
@@ -59,4 +61,4 @@
 //            e.printStackTrace();
 //        }
 //    }
-//}
+}

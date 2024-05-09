@@ -4,10 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.ImportAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.aop.AopAutoConfiguration;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.autoconfigure.kafka.KafkaAutoConfiguration;
 import org.springframework.context.annotation.Import;
 
-@SpringBootApplication
+//@SpringBootApplication
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
 //@ImportAutoConfiguration(AopAutoConfiguration.class)
 //@SpringBootApplication(exclude = KafkaAutoConfiguration.class), disable in "application.yml"
 public class ShopappApplication {

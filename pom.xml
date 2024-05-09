@@ -155,36 +155,36 @@
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 <!--		th-->
-<!--		<dependency>-->
-<!--			<groupId>com.google.code.gson</groupId>-->
-<!--			<artifactId>gson</artifactId>-->
-<!--			<version>2.10.1</version>-->
-<!--		</dependency>-->
-<!--		<dependency>-->
-<!--			<groupId>io.projectreactor</groupId>-->
-<!--			<artifactId>reactor-core</artifactId>-->
-<!--		</dependency>-->
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-starter-webflux</artifactId>-->
-<!--		</dependency>-->
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-devtools</artifactId>-->
-<!--		</dependency>-->
-<!--		<dependency>-->
-<!--			<groupId>com.fasterxml.jackson.datatype</groupId>-->
-<!--			<artifactId>jackson-datatype-jsr310</artifactId>-->
-<!--		</dependency>-->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.10.1</version>
+		</dependency>
+		<dependency>
+			<groupId>io.projectreactor</groupId>
+			<artifactId>reactor-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webflux</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.datatype</groupId>
+			<artifactId>jackson-datatype-jsr310</artifactId>
+		</dependency>
 
-<!--		<dependency>-->
-<!--			<groupId>io.github</groupId>-->
-<!--			<artifactId>payoshq</artifactId>-->
-<!--			<version>0.0.1</version>-->
-<!--			<scope>system</scope>-->
-<!--			<systemPath>${project.basedir}/libs/payos.jar</systemPath>-->
-<!--&lt;!&ndash;			<systemPath>E:/document/DoAnThucTap/shopapp-backend/libs/payos.jar</systemPath>&ndash;&gt;-->
-<!--		</dependency>-->
+		<dependency>
+			<groupId>io.github</groupId>
+			<artifactId>payoshq</artifactId>
+			<version>0.0.1</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/libs/payos.jar</systemPath>
+<!--			<systemPath>E:/document/DoAnThucTap/shopapp-backend/libs/payos.jar</systemPath>-->
+		</dependency>
 		<!--		th-->
 	</dependencies>
 	<build>
